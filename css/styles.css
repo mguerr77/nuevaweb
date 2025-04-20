@@ -1,0 +1,286 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #337ab7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #337ab7;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #286090;
+}
+
+.secondary-button {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #ec971f;
+}
+
+/* Estilos del encabezado */
+.site-header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    
+    justify-content: space-between;
+    align-items: center;
+    height: 3,5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    display: flex; /* Para alinear verticalmente la imagen dentro del enlace si es necesario */
+    align-items: center;
+    width: 10%;
+}
+
+.logo img {
+    height: 80px; /* Asegura que la altura de la imagen sea la especificada */
+}
+
+.site-title {
+    width: 35%;
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+
+.main-navigation ul {
+    width: 55%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 15px;
+}
+
+.main-navigation li:first-child {
+    margin-left: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #337ab7;
+    font-weight: bold;
+}
+
+/* Estilos de la sección Hero */
+.hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-title {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la sección de características */
+.featured-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item i {
+    font-size: 2em; /* Necesitarías una librería de iconos como Font Awesome */
+    color: #337ab7;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #666;
+}
+
+/* Estilos de la sección de testimonios */
+.testimonial-section {
+    padding: 60px 0;
+    background-color: #e9ecef;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #777;
+}
+
+/* Estilos del pie de página */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-navigation li {
+    margin-left: 15px;
+}
+
+.footer-navigation li:first-child {
+    margin-left: 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+/* Responsive Design (Opcional - para diferentes tamaños de pantalla) */
+@media (max-width: 768px) {
+    .hero .container,
+    .site-header .container,
+    .site-footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .main-navigation ul,
+    .footer-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-navigation li,
+    .footer-navigation li {
+        margin: 10px 0;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+}
