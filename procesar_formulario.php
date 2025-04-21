@@ -14,6 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         : 'Ninguno';
     $fnacimiento = htmlspecialchars($_POST['fechanacimiento'] ?? '');
     $mensaje2 = htmlspecialchars($_POST['mensaje'] ?? '');
+    $color = htmlspecialchars($_POST['color_preferido'] ?? '');
+    $pais= htmlspecialchars($_POST['pais'] ?? '');
 
     // Mostrar los datos en un formato elegante
     echo "<!DOCTYPE html>
@@ -39,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             h1 {
                 text-align: center;
-                color: #4CAF50;
+                color: $color;
             }
             p {
                 font-size: 1.1em;
@@ -63,6 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><span class='label'>Archivo Subido:</span> $archivo</p>
             <p><span class='label'>Fecha de Nacimiento:</span> $fnacimiento</p>
             <p><span class='label'>Mensaje Adicional:</span> $mensaje2</p>
+            <p style='color: $color'><span>Color</span> </p>
+            <p><span class='label'> Pais</span> $pais </p>
         </div>
     </body>
     </html>";

@@ -8,7 +8,7 @@
 <body>
     <h1>Página de contacto</h1>
     <form action="procesar_formulario.php" method="post">
-        <label for="nombre"> </label>
+        <label for="nombre">Nombre </label>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
         <br><br>
         <label for="email">Correo electronico</label>
@@ -36,11 +36,24 @@
         <label for="fnacimiento">selecciona tu fecha de nacimiento</label>
         <input type="date" id="fnacimiento" name="fechanacimiento">
         <br><br>
-        <label for="mensaje">Escriba su mensaje</label>
+        <label for="mensaje" >Escriba su mensaje</label>
         <textarea name="mensaje" id="mensaje" rows="10" cols="10">Querido amigo ...</textarea>
         <br><br>
-        <input type="submit">         
-       
+        <label for="color_preferido">Color Preferido:</label>
+        <input type="color" id="color_preferido" name="color_preferido">
+        <br><br>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" multiple>
+            <option value="esp" >España</option>
+            <option value="fr">Francia</option>
+            <option value="uk">Reino Unido</option>
+            <option value="us" selected>Estados Unidos</option>
+        </select>
+        
+            
+        <button type="reset"> <img src="imagenes/reset.jpg" alt="reset" width="60px"></button> 
+        <input type="submit" value="Eviar formulario">         
+       <p style="color: ">
        
        
     </form>
