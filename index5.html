@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Pseudoelementos ::before y ::after</title>
+    <style>
+        .alerta {
+            border: 1px solid orange;
+            background-color: #fff3e0; /* Un color de fondo suave para la alerta */
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .alerta::before {
+            content: "¡Atención! ";
+            font-weight: bold;
+            color: orange;
+        }
+
+        .cita {
+            border-left: 5px solid #ccc;
+            padding-left: 15px;
+            font-style: italic;
+        }
+
+        .cita::after {
+            content: " - Anónimo"; /* Puedes cambiar "Anónimo" por un autor */
+            font-style: normal;
+            color: #777;
+            display: block; /* Para que aparezca en una línea separada */
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="alerta">
+        Este es un mensaje importante que requiere tu atención.
+    </div>
+
+    <blockquote class="cita">
+        La única manera de hacer un gran trabajo es amar lo que haces.
+    </blockquote>
+
+    <p class="cita">
+        El futuro pertenece a quienes creen en la belleza de sus sueños.
+    </p>
+
+</body>
+</html>

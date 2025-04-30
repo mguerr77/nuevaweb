@@ -1,0 +1,35 @@
+/* Estilos generales */
+* {
+    text-align: center;
+    color: blue;
+  }
+
+span, div, h2, h3, h4, h5, h6, p {
+    text-align: left;
+    color: rgb(23, 21, 21);
+}
+p.center {
+    text-align: center;
+    color: red;
+}
+
+.boton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .boton-primario {
+    background-color: green;
+    color: white;
+  }
+  
+  .boton-secundario {
+    background-color: lightgray;
+    color: black;
+  }
+  
+  
+  
